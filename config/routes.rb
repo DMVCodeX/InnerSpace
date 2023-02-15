@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   get "homes" => "homes#new"
 
-  get "signup" => "users#new"
-  post "users" => "users#create"
+  get "/signup" => "users#new"
+  post "/users" => "users#create"
+
+  get "/login" => "sessions#new"
+  get "/sessions" => "sessions#create"
+  get "/sessions" => "sessins#destroy"
 end

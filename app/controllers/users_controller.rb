@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = user.id
-      redirct_to "/"
+      redirect_to "/homes"
     else
       render :new, status: 422
     end
